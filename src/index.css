@@ -1,3 +1,8 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,272 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+.contact .info-item {
+  padding: 20px 0 30px 0;
+  box-shadow: 0 0 4px color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.contact .info-item i {
+  color: var(--accent-color);
+  width: 56px;
+  height: 56px;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+  box-shadow: 0 2px 3px color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.contact .info-item h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-item p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.contact .php-email-form {
+  height: 100%;
+  padding: 30px;
+  box-shadow: 0 0 4px color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+@media (max-width: 575px) {
+  .contact .php-email-form {
+    padding: 20px;
+  }
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  background: #df1529;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #ffffff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: var(--background-color);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--accent-color);
+  border-top-color: var(--background-color);
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input[type=text],
+.contact .php-email-form input[type=email],
+.contact .php-email-form textarea {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+
+.contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.contact .php-email-form input[type=text]::placeholder,
+.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.contact .php-email-form button[type=submit] {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 
+# Pricing Section */
+--------------------------------------------------------------*/
+.pricing .pricing-item {
+background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
+padding: 40px 40px;
+height: 100%;
+border-radius: 15px;
+}
+
+.pricing h3 {
+font-weight: 600;
+margin-bottom: 15px;
+font-size: 20px;
+}
+
+.pricing h4 {
+color: var(--accent-color);
+font-size: 48px;
+font-weight: 700;
+font-family: var(--heading-font);
+margin-bottom: 0;
+}
+
+.pricing h4 sup {
+font-size: 28px;
+}
+
+.pricing h4 span {
+color: color-mix(in srgb, var(--default-color), transparent 50%);
+font-size: 18px;
+font-weight: 500;
+}
+
+.pricing .description {
+font-size: 14px;
+}
+
+.pricing .cta-btn {
+background-color: var(--default-color);
+color: var(--contrast-color);
+display: block;
+text-align: center;
+padding: 10px 35px;
+border-radius: 5px;
+font-size: 16px;
+font-weight: 500;
+font-family: var(--heading-font);
+transition: 0.3s;
+margin-top: 20px;
+margin-bottom: 6px;
+}
+
+.pricing .cta-btn:hover {
+background: var(--accent-color);
+color: var(--contrast-color);
+}
+
+.pricing ul {
+padding: 0;
+list-style: none;
+color: color-mix(in srgb, var(--default-color), transparent 30%);
+text-align: left;
+line-height: 20px;
+}
+
+.pricing ul li {
+padding: 10px 0;
+display: flex;
+align-items: center;
+}
+
+.pricing ul li:last-child {
+padding-bottom: 0;
+}
+
+.pricing ul i {
+color: #059652;
+font-size: 24px;
+padding-right: 3px;
+}
+
+.pricing ul .na {
+color: color-mix(in srgb, var(--default-color), transparent 60%);
+}
+
+.pricing ul .na i {
+color: color-mix(in srgb, var(--default-color), transparent 60%);
+}
+
+.pricing ul .na span {
+text-decoration: line-through;
+}
+
+.pricing .featured {
+position: relative;
+}
+
+.pricing .featured .popular {
+position: absolute;
+top: 15px;
+right: 15px;
+background-color: var(--accent-color);
+color: var(--contrast-color);
+padding: 5px 15px;
+margin: 0;
+border-radius: 5px;
+font-size: 14px;
+font-weight: 400;
+}
+
+.pricing .featured .cta-btn {
+background: var(--accent-color);
+color: var(--contrast-color);
+}
+
+@media (max-width: 992px) {
+.pricing .box {
+  max-width: 60%;
+  margin: 0 auto 30px auto;
+}
+}
+
+@media (max-width: 767px) {
+.pricing .box {
+  max-width: 80%;
+  margin: 0 auto 30px auto;
+}
+}
+
+@media (max-width: 420px) {
+.pricing .box {
+  max-width: 100%;
+  margin: 0 auto 30px auto;
+}
 }
