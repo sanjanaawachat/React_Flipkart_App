@@ -52,11 +52,11 @@
 // export default Navbar;
 
 
-
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 //  import Cart from './Cart';
-import React, { useContext } from "react";
-import { CartContext } from "./Cart";
+// import React, { useContext } from "react";
+// import { CartContext } from "./Cart";
 const Navbar = () => {
 
 

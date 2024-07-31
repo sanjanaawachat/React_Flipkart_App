@@ -124,19 +124,19 @@ const Product = () => {
   const [loading, setLoading] = useState(true);
   // const dispatch = useDispatch();
 
-  const handleDecrement = () => {
-    setProduct((prevProduct) => ({
-      ...prevProduct,
-      qty: Math.max((prevProduct.qty || 1) - 1, 1)
-    }));
-  };
+  // const handleDecrement = () => {
+  //   setProduct((prevProduct) => ({
+  //     ...prevProduct,
+  //     qty: Math.max((prevProduct.qty || 1) - 1, 1)
+  //   }));
+  // };
 
-  const handleIncrement = () => {
-    setProduct((prevProduct) => ({
-      ...prevProduct,
-      qty: (prevProduct.qty || 1) + 1
-    }));
-  };
+  // const handleIncrement = () => {
+  //   setProduct((prevProduct) => ({
+  //     ...prevProduct,
+  //     qty: (prevProduct.qty || 1) + 1
+  //   }));
+  // };
 
   // const addProduct = (product) => {
   //   dispatch(addCart(product));
