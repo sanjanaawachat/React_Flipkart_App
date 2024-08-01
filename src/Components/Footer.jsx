@@ -3,6 +3,9 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
+
+
+
      <section class="footerSection">
         <div class="container">
           <div class="row">
@@ -18,23 +21,27 @@ const Footer = () => {
               <div class="form text-center">
                 <lable class="email">email</lable>
                 <input type="email" placeholder="Enter your email to update" />
-                <button class="btn" type="submit">Submit</button>
+                <button class="btn btn-warning" type="submit">Submit</button>
               </div>
               <ul class="icon2 text-center">
                 <li>
-                  <a href="#"
+                  <a href="index.html
+                  "
                     ><i class="fa-brands fa-square-facebook fa-3x"></i></a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="index.html
+                  "
                     ><i class="fa-brands fa-square-twitter fa-3x"></i></a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="index.html
+                  "
                     ><i class="fa-brands fa-square-google-plus fa-3x"></i></a>
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="index.html
+                  "
                     ><i class="fa-brands fa-square-pinterest fa-3x"></i></a>
                 </li>
               </ul>
@@ -59,37 +66,43 @@ const Footer = () => {
   
               <div class="col-1 offset-1">
                 <ul>
-                  <li><a href="javascript:;">Examples</a></li>
-                  <li><a href="javascript:;">Shops</a></li>
-                  <li><a href="javascript:;">License</a></li>
+                  <li>Examples</li>
+                  <li>Shops</li>
+                  <li>License</li>
                 </ul>
               </div>
               <div class="col-1 offset-1">
                 <ul>
-                  <li><a href="javascript:;">Contact</a></li>
-                  <li><a href="javascript:;">About</a></li>
-                  <li><a href="javascript:;">Privacy</a></li>
-                  <li><a href="javascript:;">Terms</a></li>
+                  <li>Contact</li>
+                  <li>About</li>
+                  <li>Privacy</li>
+                  <li>Terms</li>
                 </ul>
               </div>
               <div class="col-1 offset-1">
                 <ul>
-                  <li><a href="javascript:;">Dowunload</a></li>
-                  <li><a href="javascript:;">Support</a></li>
-                  <li><a href="javascript:;">Documents</a></li>
+                  <li>Dowunload</li>
+                  <li>Support</li>
+                  <li>Documents</li>
                 </ul>
               </div>
               <div class="col-1 offset-1">
                   <ul>
-                    <li><a href="javascript:;">Media</a></li>
-                    <li><a href="javascript:;">Blog</a></li>
-                    <li><a href="javascript:;">Forums</a></li>
+                    <li>Media</li>
+                    <li>Blog</li>
+                    <li>Forums</li>
                   </ul>
                 </div>
             </div>
           </div>
         </div>
-      </section>
+
+    </section>
+    <div class="d-flex flex-column flex-sm-row justify-content-center py-2 my-4">
+      <h5>&copy; 2024 Company, Inc. All rights reserved.</h5>
+  
+    </div>
+
     </>
   )
 }

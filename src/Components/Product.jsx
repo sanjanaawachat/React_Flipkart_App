@@ -179,6 +179,7 @@ const Product = () => {
   const ShowProduct = () => {
     return (
       <>
+      <div className='container mt-5'>
         <div className="col-md-6">
           <img src={product.image} alt={product.title} height="400px" width="400px" />
         </div>
@@ -201,6 +202,7 @@ const Product = () => {
           {/* {product.qty && (
             <Cart product={product} handleDecrement={handleDecrement} handleIncrement={handleIncrement} />
           )} */}
+        </div>
         </div>
       </>
     );

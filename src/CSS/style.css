@@ -432,4 +432,7 @@ body {
     box-sizing: border-box;
 }
 
-
+.fa-star:before {
+  content: "\f005";
+  color: yellow;
+}

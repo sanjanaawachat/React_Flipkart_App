@@ -11,7 +11,8 @@ import Pricing from './Components/Pricing';
 import Contact from './Components/Contact';
 import Cart from './Components/Cart';
 import GoToTopButton from './Components/GotoTopbtn';
-import Header from './Components/Header';
+// import Header from './Components/Header';
+
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
       <Route exact path="/pricing" element={<Pricing/>} />
       <Route exact path="/contact" element={<Contact/>} />
       <Route exact path="/cart" element={<Cart/>} />
-   
+
     </Routes>
     <Footer/>
     <GoToTopButton/>

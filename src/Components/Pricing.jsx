@@ -30,7 +30,8 @@ const About = () => {
               <h3>Free Plan</h3>
               <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
               <h4><sup>$</sup>0<span> / month</span></h4>
-              <a href="#" class="cta-btn">Start a free trial</a>
+              {/* <a href="#" class="cta-btn">Start a free trial</a> */}
+              <p class="cta-btn">Start a free trial</p>
               <p class="text-center small">No credit card required</p>
           
             </div>
@@ -42,7 +43,8 @@ const About = () => {
               <h3>Business Plan</h3>
               <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
               <h4><sup>$</sup>29<span> / month</span></h4>
-              <a href="#" class="cta-btn">Start a free trial</a>
+              {/* <a href="#" class="cta-btn">Start a free trial</a> */}
+              <p class="cta-btn">Start a free trial</p>
               <p class="text-center small">No credit card required</p>
              
             </div>
@@ -53,7 +55,8 @@ const About = () => {
               <h3>Developer Plan</h3>
               <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
               <h4><sup>$</sup>49<span> / month</span></h4>
-              <a href="#" class="cta-btn">Start a free trial</a>
+         
+              <p class="cta-btn">Start a free trial</p>
               <p class="text-center small">No credit card required</p>
            
             </div>
