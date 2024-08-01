@@ -433,6 +433,6 @@ body {
 }
 
 .fa-star:before {
-  content: "\f005";
+  /* content: "\f005"; */
   color: yellow;
 }
